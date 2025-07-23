@@ -21,6 +21,7 @@ public class registrationPage {
     By num_backlog_loc = By.xpath("//input[@id='backlogCount']");
     By btn_register_loc = By.xpath("//button[@id='register']");
     
+
     //Action methods
     public void setStudentName(String studentName){
         driver.findElement(txt_studentName_loc).sendKeys(studentName);
