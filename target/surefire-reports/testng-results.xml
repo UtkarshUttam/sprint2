@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-25T17:40:23 IST" name="Surefire suite" finished-at="2025-07-25T17:41:11 IST" duration-ms="47704">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-25T17:40:23 IST" name="Surefire test" finished-at="2025-07-25T17:41:11 IST" duration-ms="47704">
+      <class name="testRunner.pwdRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:23 IST" name="setUpClass" finished-at="2025-07-25T17:40:24 IST" duration-ms="754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@44bc2449]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:31 IST" duration-ms="7639" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Blank password validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Password field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed for blank password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed for blank password
+at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:36 IST" duration-ms="4966" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Short password validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Password field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed for short password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed for short password
+at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:41 IST" duration-ms="4956" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Long password validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Password field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed for long password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed for long password
+at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:55 IST" duration-ms="13703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid password acceptance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Password field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:41:11 IST" duration-ms="15500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Special characters allowed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Password field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:41:11 IST" name="tearDownClass" finished-at="2025-07-25T17:41:11 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.pwdRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

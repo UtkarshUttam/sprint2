@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.pwdRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 48.319 s <<< FAILURE! - in testRunner.pwdRunner
+testRunner.pwdRunner.runScenario["Blank password validation", "Password field edge‐case validation"](1)  Time elapsed: 7.643 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed for blank password
+	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+	at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+
+testRunner.pwdRunner.runScenario["Short password validation", "Password field edge‐case validation"](2)  Time elapsed: 4.963 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed for short password
+	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+	at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+
+testRunner.pwdRunner.runScenario["Long password validation", "Password field edge‐case validation"](3)  Time elapsed: 4.956 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed for long password
+	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+	at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+

@@ -32,10 +32,10 @@ public class registrationPage {
     }
 
     public void setEmailId(String emailId){
-        driver.findElement(txt_emailId_loc).sendKeys(emailId)
+        driver.findElement(txt_emailId_loc).sendKeys(emailId);
     }
 
-    public void setCgpa(string cgpa){
+    public void setCgpa(String cgpa){
         driver.findElement(num_cgpa_loc).sendKeys(cgpa);
     }
 

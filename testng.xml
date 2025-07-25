@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Password Field Validation Suite" parallel="false">
+  <test name="Cucumber-TestNG Execution">
+    <classes>
+      <class name="testRunner.pwdRunner"/>
+    </classes>
+  </test>
+</suite>
