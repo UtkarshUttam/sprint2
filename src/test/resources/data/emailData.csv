@@ -1,0 +1,6 @@
+Type,Input,ExpectedOutcome
+blank,,"Error: Provide value for email id,"
+missingAtSymbol,userdomain.com,Error: Invalid email format
+missingDomain,user@,Error: Invalid email format
+valid,student@example.com,Success
+complex,user+tag@sub.domain.co.uk,Success

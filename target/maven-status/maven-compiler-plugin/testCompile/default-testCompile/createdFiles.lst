@@ -1,10 +1,11 @@
 utils\WaitUtility.class
 base\BaseClass.class
+stepDefinitions\RegistrationSteps.class
 testRunner\pwdRunner.class
 pageObjects\loginPage.class
 stepDefinitions\PasswordFieldSteps.class
+pageObjects\RegistrationPage.class
 pageObjects\viewAllStudentPage.class
-pageObjects\registrationPage.class
 hooks\ReportHooks.class
 utils\ScreenshotUtil.class
 utils\ExtentManager.class

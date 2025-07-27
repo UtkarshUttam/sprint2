@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">10 methods, 5 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Short password validation&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Short password validation", "Password field edge‐case validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Long password validation&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Long password validation", "Password field edge‐case validation")</a> <!-- method navigator-link -->
@@ -113,7 +118,12 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Short password validation&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Short password validation", "Password field edge‐case validation")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Missing domain validation&quot;, &quot;Email field edge‐case validation&quot;)">runScenario("Missing domain validation", "Email field edge‐case validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Missing &#039;@&#039; symbol validation&quot;, &quot;Email field edge‐case validation&quot;)">runScenario("Missing '@' symbol validation", "Email field edge‐case validation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -127,12 +137,27 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Special characters allowed&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Special characters allowed", "Password field edge‐case validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid password acceptance&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Valid password acceptance", "Password field edge‐case validation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Special characters allowed&quot;, &quot;Password field edge‐case validation&quot;)">runScenario("Special characters allowed", "Password field edge‐case validation")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Blank email validation&quot;, &quot;Email field edge‐case validation&quot;)">runScenario("Blank email validation", "Email field edge‐case validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Complex email acceptance&quot;, &quot;Email field edge‐case validation&quot;)">runScenario("Complex email acceptance", "Email field edge‐case validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunner.pwdRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid email acceptance&quot;, &quot;Email field edge‐case validation&quot;)">runScenario("Valid email acceptance", "Email field edge‐case validation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -155,6 +180,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Short password validation&quot;, &quot;Password field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Short password validation", "Password field edge‐case validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Short password validation","Password field edge‐case validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation failed for short password
+	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
+	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
+	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Registration/src/test/resources/features/pwd01.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Long password validation&quot;, &quot;Password field edge‐case validation&quot;)">
                   </a> <!-- runScenario("Long password validation", "Password field edge‐case validation") -->
                   <span class="method-name">runScenario</span>
@@ -162,7 +203,7 @@
                   <div class="stack-trace">java.lang.AssertionError: Validation failed for long password
 	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
 	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Registration/src/test/resources/features/pwd01.feature:15)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -178,7 +219,7 @@
                   <div class="stack-trace">java.lang.AssertionError: Validation failed for blank password
 	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
 	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Registration/src/test/resources/features/pwd01.feature:7)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -187,14 +228,28 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Short password validation&quot;, &quot;Password field edge‐case validation&quot;)">
-                  </a> <!-- runScenario("Short password validation", "Password field edge‐case validation") -->
+                  <a name="runScenario(&quot;Missing domain validation&quot;, &quot;Email field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Missing domain validation", "Email field edge‐case validation") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Short password validation","Password field edge‐case validation")</span>
-                  <div class="stack-trace">java.lang.AssertionError: Validation failed for short password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+                  <span class="parameters">("Missing domain validation","Email field edge‐case validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation failed for email type: missingDomain
+	at stepDefinitions.RegistrationSteps.validate_email_of_type_using_data_from(RegistrationSteps.java:146)
+	at ✽.I validate email of type &quot;missingDomain&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Registration/src/test/resources/features/StudentRegistrationEmail.feature:15)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Missing &#039;@&#039; symbol validation&quot;, &quot;Email field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Missing '@' symbol validation", "Email field edge‐case validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Missing '@' symbol validation","Email field edge‐case validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Validation failed for email type: missingAtSymbol
+	at stepDefinitions.RegistrationSteps.validate_email_of_type_using_data_from(RegistrationSteps.java:146)
+	at ✽.I validate email of type &quot;missingAtSymbol&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Registration/src/test/resources/features/StudentRegistrationEmail.feature:11)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -211,6 +266,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Special characters allowed&quot;, &quot;Password field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Special characters allowed", "Password field edge‐case validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Special characters allowed","Password field edge‐case validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Valid password acceptance&quot;, &quot;Password field edge‐case validation&quot;)">
                   </a> <!-- runScenario("Valid password acceptance", "Password field edge‐case validation") -->
                   <span class="method-name">runScenario</span>
@@ -221,10 +286,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Special characters allowed&quot;, &quot;Password field edge‐case validation&quot;)">
-                  </a> <!-- runScenario("Special characters allowed", "Password field edge‐case validation") -->
+                  <a name="runScenario(&quot;Blank email validation&quot;, &quot;Email field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Blank email validation", "Email field edge‐case validation") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Special characters allowed","Password field edge‐case validation")</span>
+                  <span class="parameters">("Blank email validation","Email field edge‐case validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Complex email acceptance&quot;, &quot;Email field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Complex email acceptance", "Email field edge‐case validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Complex email acceptance","Email field edge‐case validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Valid email acceptance&quot;, &quot;Email field edge‐case validation&quot;)">
+                  </a> <!-- runScenario("Valid email acceptance", "Email field edge‐case validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Valid email acceptance","Email field edge‐case validation")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -290,32 +375,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.pwdRunner')
-data.setCell(0, 3, 15500);
+data.setCell(0, 3, 17929);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRunner.pwdRunner')
-data.setCell(1, 3, 13703);
+data.setCell(1, 3, 16529);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'testRunner.pwdRunner')
-data.setCell(2, 3, 7639);
+data.setCell(2, 3, 16464);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'testRunner.pwdRunner')
-data.setCell(3, 3, 4966);
+data.setCell(3, 3, 15268);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'testRunner.pwdRunner')
-data.setCell(4, 3, 4956);
+data.setCell(4, 3, 15201);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'testRunner.pwdRunner')
+data.setCell(5, 3, 14402);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'testRunner.pwdRunner')
+data.setCell(6, 3, 14396);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'testRunner.pwdRunner')
+data.setCell(7, 3, 4551);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'testRunner.pwdRunner')
+data.setCell(8, 3, 4347);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'testRunner.pwdRunner')
+data.setCell(9, 3, 4309);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -343,38 +448,62 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.pwdRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@44bc2449)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6f112f70)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Blank email validation", "Email field edge‐case validation")</span>
+                <span class="method-start">651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Missing '@' symbol validation", "Email field edge‐case validation")</span>
+                <span class="method-start">18580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Missing domain validation", "Email field edge‐case validation")</span>
+                <span class="method-start">35112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Valid email acceptance", "Email field edge‐case validation")</span>
+                <span class="method-start">51577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Complex email acceptance", "Email field edge‐case validation")</span>
+                <span class="method-start">66846 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Blank password validation", "Password field edge‐case validation")</span>
-                <span class="method-start">772 ms</span>
+                <span class="method-start">82048 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Short password validation", "Password field edge‐case validation")</span>
-                <span class="method-start">8415 ms</span>
+                <span class="method-start">86396 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Long password validation", "Password field edge‐case validation")</span>
-                <span class="method-start">13382 ms</span>
+                <span class="method-start">90706 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Valid password acceptance", "Password field edge‐case validation")</span>
-                <span class="method-start">18339 ms</span>
+                <span class="method-start">95258 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Special characters allowed", "Password field edge‐case validation")</span>
-                <span class="method-start">32043 ms</span>
+                <span class="method-start">109661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">47545 ms</span>
+                <span class="method-start">124060 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
