@@ -10,4 +10,5 @@ hooks\ReportHooks.class
 utils\ScreenshotUtil.class
 utils\ExtentManager.class
 hooks\Hooks.class
+stepDefinitions\ViewAllStudentsSteps.class
 utils\DataReader.class
