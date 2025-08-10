@@ -1,22 +1,60 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.pwdRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 48.319 s <<< FAILURE! - in testRunner.pwdRunner
-testRunner.pwdRunner.runScenario["Blank password validation", "Password field edge‐case validation"](1)  Time elapsed: 7.643 s  <<< FAILURE!
+Tests run: 20, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 331.197 s <<< FAILURE! - in testRunner.pwdRunner
+testRunner.pwdRunner.runScenario["Missing '@' symbol validation", "Email field edge‐case validation"](2)  Time elapsed: 18.241 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed for email type: missingAtSymbol
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type "missingAtSymbol" using data from "src/test/resources/data/emailData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:12)
+
+testRunner.pwdRunner.runScenario["Missing domain validation", "Email field edge‐case validation"](3)  Time elapsed: 17.194 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed for email type: missingDomain
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type "missingDomain" using data from "src/test/resources/data/emailData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:16)
+
+testRunner.pwdRunner.runScenario["Student name is empty", "Student Name Field Validation"](6)  Time elapsed: 18.217 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed: expected 'Provide value for student name' but got 'Provide value for student name,'
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.StNameRegSteps.validate_name_result(StNameRegSteps.java:71)
+	at ✽.the name validation result should be "Provide value for student name"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_NameReg.feature:11)
+
+testRunner.pwdRunner.runScenario["Blank password validation", "Password field edge‐case validation"](13)  Time elapsed: 4.722 s  <<< FAILURE!
 java.lang.AssertionError: Validation failed for blank password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:8)
 
-testRunner.pwdRunner.runScenario["Short password validation", "Password field edge‐case validation"](2)  Time elapsed: 4.963 s  <<< FAILURE!
+testRunner.pwdRunner.runScenario["Short password validation", "Password field edge‐case validation"](14)  Time elapsed: 4.895 s  <<< FAILURE!
 java.lang.AssertionError: Validation failed for short password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:12)
 
-testRunner.pwdRunner.runScenario["Long password validation", "Password field edge‐case validation"](3)  Time elapsed: 4.956 s  <<< FAILURE!
+testRunner.pwdRunner.runScenario["Long password validation", "Password field edge‐case validation"](15)  Time elapsed: 4.977 s  <<< FAILURE!
 java.lang.AssertionError: Validation failed for long password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:16)
+
+testRunner.pwdRunner.runScenario["Click register without entering any data", "Registration Button"](18)  Time elapsed: 18.211 s  <<< FAILURE!
+java.lang.AssertionError: Validation failed: expected 'Provide value for all fields' but got 'Provide value for student name, Provide value for mobile number, Provide value for email id, Provide value for cgpa, Provide value for department name, Provide value for backlog count,'
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be "Provide value for all fields"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:6)
+
+testRunner.pwdRunner.runScenario["Click register with valid student name", "Registration Button"](19)  Time elapsed: 18.064 s  <<< FAILURE!
+java.lang.AssertionError: Expected registration success, but got [error]: Provide value for backlog count,
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:42)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be "Registration was successful"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:12)
+
+testRunner.pwdRunner.runScenario["Validate all student details against CSV data", "View All Students Page"](20)  Time elapsed: 28.979 s  <<< FAILURE!
+java.lang.AssertionError: Mismatch for roll 10097 at column[1]: expected [Ananya Sharma] but found [krish] expected [Ananya Sharma] but found [krish]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepDefinitions.ViewAllStudentsSteps.the_user_validates_each_student_by_roll_number(ViewAllStudentsSteps.java:114)
+	at ✽.the user validates each student by roll number(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/viewAllStudents.feature:16)
 

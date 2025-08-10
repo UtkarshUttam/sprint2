@@ -1,27 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="20" passed="11" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T17:40:23 IST" name="Surefire suite" finished-at="2025-07-25T17:41:11 IST" duration-ms="47704">
+  <suite started-at="2025-08-10T16:28:44 IST" name="Surefire suite" finished-at="2025-08-10T16:34:14 IST" duration-ms="330185">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-25T17:40:23 IST" name="Surefire test" finished-at="2025-07-25T17:41:11 IST" duration-ms="47704">
+    <test started-at="2025-08-10T16:28:44 IST" name="Surefire test" finished-at="2025-08-10T16:34:14 IST" duration-ms="330185">
       <class name="testRunner.pwdRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:23 IST" name="setUpClass" finished-at="2025-07-25T17:40:24 IST" duration-ms="754" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:28:44 IST" name="setUpClass" finished-at="2025-08-10T16:28:45 IST" duration-ms="1164" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@44bc2449]]>
+                <![CDATA[org.testng.TestRunner@11fb1691]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:31 IST" duration-ms="7639" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:28:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:06 IST" duration-ms="20153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Blank email validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Email field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:24 IST" duration-ms="18236" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Missing '@' symbol validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Email field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed for email type: missingAtSymbol]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed for email type: missingAtSymbol
+at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+at ✽.I validate email of type "missingAtSymbol" using data from "src/test/resources/data/emailData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:41 IST" duration-ms="17192" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Missing domain validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Email field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed for email type: missingDomain]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed for email type: missingDomain
+at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+at ✽.I validate email of type "missingDomain" using data from "src/test/resources/data/emailData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:58 IST" duration-ms="17241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid email acceptance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Email field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:30:16 IST" duration-ms="17941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complex email acceptance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Email field edge‐case validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:30:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:30:34 IST" duration-ms="18222" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name is empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed: expected 'Provide value for student name' but got 'Provide value for student name,']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed: expected 'Provide value for student name' but got 'Provide value for student name,'
+at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+at stepDefinitions.StNameRegSteps.validate_name_result(StNameRegSteps.java:71)
+at ✽.the name validation result should be "Provide value for student name"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_NameReg.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:30:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:30:54 IST" duration-ms="19140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name has only 1 character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:30:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:31:11 IST" duration-ms="17392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name has 2 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:31:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:31:30 IST" duration-ms="18581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name contains numbers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:31:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:31:49 IST" duration-ms="18990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name contains special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:31:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:06 IST" duration-ms="17782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name exceeds 30 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:25 IST" duration-ms="18892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student name is valid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Name Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:30 IST" duration-ms="4722" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,16 +266,16 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Validation failed for blank password
-at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+at ✽.I validate password of type "blank" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:36 IST" duration-ms="4966" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:35 IST" duration-ms="4895" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,16 +294,16 @@ at ✽.I validate password of type "blank" using data from "src/test/resources/d
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Validation failed for short password
-at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+at ✽.I validate password of type "short" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:12)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:41 IST" duration-ms="4956" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:40 IST" duration-ms="4975" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -96,16 +322,16 @@ at ✽.I validate password of type "short" using data from "src/test/resources/d
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Validation failed for long password
-at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+at ✽.I validate password of type "long" using data from "src/test/resources/data/passwordData.csv"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:16)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:40:55 IST" duration-ms="13703" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:54 IST" duration-ms="14133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +347,7 @@ at ✽.I validate password of type "long" using data from "src/test/resources/da
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:40:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-25T17:41:11 IST" duration-ms="15500" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:33:08 IST" duration-ms="14290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,7 +363,99 @@ at ✽.I validate password of type "long" using data from "src/test/resources/da
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.pwdRunner@11a9e7c8]" started-at="2025-07-25T17:41:11 IST" name="tearDownClass" finished-at="2025-07-25T17:41:11 IST" duration-ms="134" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:33:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:33:26 IST" duration-ms="18211" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click register without entering any data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Button"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validation failed: expected 'Provide value for all fields' but got 'Provide value for student name, Provide value for mobile number, Provide value for email id, Provide value for cgpa, Provide value for department name, Provide value for backlog count,']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validation failed: expected 'Provide value for all fields' but got 'Provide value for student name, Provide value for mobile number, Provide value for email id, Provide value for cgpa, Provide value for department name, Provide value for backlog count,'
+at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+at ✽.the registration result should be "Provide value for all fields"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:33:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:33:45 IST" duration-ms="18064" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click register with valid student name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Button"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected registration success, but got [error]: Provide value for backlog count,]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected registration success, but got [error]: Provide value for backlog count,
+at utils.ValidationHelper.validateResult(ValidationHelper.java:42)
+at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+at ✽.the registration result should be "Registration was successful"(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:33:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:34:13 IST" duration-ms="28979" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate all student details against CSV data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["View All Students Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Mismatch for roll 10097 at column[1]: expected [Ananya Sharma] but found [krish] expected [Ananya Sharma] but found [krish]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Mismatch for roll 10097 at column[1]: expected [Ananya Sharma] but found [krish] expected [Ananya Sharma] but found [krish]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at stepDefinitions.ViewAllStudentsSteps.the_user_validates_each_student_by_roll_number(ViewAllStudentsSteps.java:114)
+at ✽.the user validates each student by roll number(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/viewAllStudents.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:34:14 IST" name="cleanup" finished-at="2025-08-10T16:34:14 IST" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:34:14 IST" name="tearDownClass" finished-at="2025-08-10T16:34:14 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

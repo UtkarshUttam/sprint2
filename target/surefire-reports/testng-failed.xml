@@ -6,8 +6,9 @@
       <class name="testRunner.pwdRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="cleanup"/>
+          <include name="runScenario" invocation-numbers="1 17 2 18 19 5 12 13 14"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- testRunner.pwdRunner -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 25 17:40:23 IST 2025</td>
+<td>Started on:</td><td>Sun Aug 10 16:28:44 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47704 ms)</td>
+<tr><td>Total time:</td><td>330 seconds (330185 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,47 +76,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click register with valid student name", "Registration Button"</td>
+<td><div><pre>java.lang.AssertionError: Expected registration success, but got [error]: Provide value for backlog count,
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:42)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be &quot;Registration was successful&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1632648448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1632648448'><pre>java.lang.AssertionError: Expected registration success, but got [error]: Provide value for backlog count,
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:42)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be &quot;Registration was successful&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:12)
+</pre></div></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
 <td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Long password validation", "Password field edge‐case validation"</td>
 <td><div><pre>java.lang.AssertionError: Validation failed for long password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1823354445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1823354445'><pre>java.lang.AssertionError: Validation failed for long password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:15)
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace816956885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816956885'><pre>java.lang.AssertionError: Validation failed for long password
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;long&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:16)
 </pre></div></td>
 <td>4</td>
-<td>testRunner.pwdRunner@11a9e7c8</td></tr>
+<td>testRunner.pwdRunner@3901d134</td></tr>
 <tr>
-<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Blank password validation", "Password field edge‐case validation"</td>
-<td><div><pre>java.lang.AssertionError: Validation failed for blank password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1228603887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1228603887'><pre>java.lang.AssertionError: Validation failed for blank password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:7)
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click register without entering any data", "Registration Button"</td>
+<td><div><pre>java.lang.AssertionError: Validation failed: expected &apos;Provide value for all fields&apos; but got &apos;Provide value for student name, Provide value for mobile number, Provide value for email id, Provide value for cgpa, Provide value for department name, Provide value for backlog count,&apos;
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be &quot;Provide value for all fields&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace664449374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace664449374'><pre>java.lang.AssertionError: Validation failed: expected &apos;Provide value for all fields&apos; but got &apos;Provide value for student name, Provide value for mobile number, Provide value for email id, Provide value for cgpa, Provide value for department name, Provide value for backlog count,&apos;
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.RegBtnSteps.validate_registration_result(RegBtnSteps.java:81)
+	at ✽.the registration result should be &quot;Provide value for all fields&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/regButtonReg.feature:6)
 </pre></div></td>
-<td>7</td>
-<td>testRunner.pwdRunner@11a9e7c8</td></tr>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name is empty", "Student Name Field Validation"</td>
+<td><div><pre>java.lang.AssertionError: Validation failed: expected &apos;Provide value for student name&apos; but got &apos;Provide value for student name,&apos;
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.StNameRegSteps.validate_name_result(StNameRegSteps.java:71)
+	at ✽.the name validation result should be &quot;Provide value for student name&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_NameReg.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace888000613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888000613'><pre>java.lang.AssertionError: Validation failed: expected &apos;Provide value for student name&apos; but got &apos;Provide value for student name,&apos;
+	at utils.ValidationHelper.validateResult(ValidationHelper.java:61)
+	at stepDefinitions.StNameRegSteps.validate_name_result(StNameRegSteps.java:71)
+	at ✽.the name validation result should be &quot;Provide value for student name&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_NameReg.feature:11)
+</pre></div></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Missing '@' symbol validation", "Email field edge‐case validation"</td>
+<td><div><pre>java.lang.AssertionError: Validation failed for email type: missingAtSymbol
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type &quot;missingAtSymbol&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1725885575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725885575'><pre>java.lang.AssertionError: Validation failed for email type: missingAtSymbol
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type &quot;missingAtSymbol&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:12)
+</pre></div></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
 <tr>
 <td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Short password validation", "Password field edge‐case validation"</td>
 <td><div><pre>java.lang.AssertionError: Validation failed for short password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace529893402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace529893402'><pre>java.lang.AssertionError: Validation failed for short password
-	at stepDefinitions.PasswordFieldSteps.validateError(PasswordFieldSteps.java:117)
-	at stepDefinitions.PasswordFieldSteps.validate_password_of_type_using_data_from(PasswordFieldSteps.java:87)
-	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2/src/test/resources/features/pwd01.feature:11)
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace283690914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace283690914'><pre>java.lang.AssertionError: Validation failed for short password
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;short&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:12)
 </pre></div></td>
 <td>4</td>
-<td>testRunner.pwdRunner@11a9e7c8</td></tr>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Missing domain validation", "Email field edge‐case validation"</td>
+<td><div><pre>java.lang.AssertionError: Validation failed for email type: missingDomain
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type &quot;missingDomain&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1984294974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1984294974'><pre>java.lang.AssertionError: Validation failed for email type: missingDomain
+	at stepDefinitions.EmailRegSteps.validate_email_of_type_using_data_from(EmailRegSteps.java:157)
+	at ✽.I validate email of type &quot;missingDomain&quot; using data from &quot;src/test/resources/data/emailData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/St_EmailReg.feature:16)
+</pre></div></td>
+<td>17</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Blank password validation", "Password field edge‐case validation"</td>
+<td><div><pre>java.lang.AssertionError: Validation failed for blank password
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace148232830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace148232830'><pre>java.lang.AssertionError: Validation failed for blank password
+	at stepDefinitions.PwdLoginSteps.validateError(PwdLoginSteps.java:121)
+	at stepDefinitions.PwdLoginSteps.validate_password_of_type_using_data_from(PwdLoginSteps.java:86)
+	at ✽.I validate password of type &quot;blank&quot; using data from &quot;src/test/resources/data/passwordData.csv&quot;(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/pwdLogin.feature:8)
+</pre></div></td>
+<td>4</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all student details against CSV data", "View All Students Page"</td>
+<td><div><pre>java.lang.AssertionError: Mismatch for roll 10097 at column[1]: expected [Ananya Sharma] but found [krish] expected [Ananya Sharma] but found [krish]
+	at stepDefinitions.ViewAllStudentsSteps.the_user_validates_each_student_by_roll_number(ViewAllStudentsSteps.java:114)
+	at ✽.the user validates each student by roll number(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/viewAllStudents.feature:16)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737025043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737025043'><pre>java.lang.AssertionError: Mismatch for roll 10097 at column[1]: expected [Ananya Sharma] but found [krish] expected [Ananya Sharma] but found [krish]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepDefinitions.ViewAllStudentsSteps.the_user_validates_each_student_by_roll_number(ViewAllStudentsSteps.java:114)
+	at ✽.the user validates each student by roll number(file:///C:/Cognizant/Sprint2/sprint2Try3/src/test/resources/features/viewAllStudents.feature:16)
+</pre></div></td>
+<td>28</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,13 +212,58 @@ function toggleAllBoxes() {
 <tr>
 <td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid password acceptance", "Password field edge‐case validation"</td>
 <td></td>
-<td>13</td>
-<td>testRunner.pwdRunner@11a9e7c8</td></tr>
+<td>14</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Blank email validation", "Email field edge‐case validation"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complex email acceptance", "Email field edge‐case validation"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name exceeds 30 characters", "Student Name Field Validation"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name has 2 characters", "Student Name Field Validation"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name contains numbers", "Student Name Field Validation"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name contains special characters", "Student Name Field Validation"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
 <tr>
 <td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Special characters allowed", "Password field edge‐case validation"</td>
 <td></td>
-<td>15</td>
-<td>testRunner.pwdRunner@11a9e7c8</td></tr>
+<td>14</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name has only 1 character", "Student Name Field Validation"</td>
+<td></td>
+<td>19</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student name is valid", "Student Name Field Validation"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
+<tr>
+<td title='testRunner.pwdRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.pwdRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid email acceptance", "Email field edge‐case validation"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.pwdRunner@3901d134</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Password Field Validation Suite" parallel="false">
+  <listeners>
+    <listener class-name="utils.ExtentTestListener"/>
+  </listeners>
   <test name="Cucumber-TestNG Execution">
     <classes>
-      <class name="testRunner.pwdRunner"/>
+      <class name="testRunner.pwdRunner"/>      
     </classes>
   </test>
 </suite>
