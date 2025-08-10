@@ -20,7 +20,11 @@ import hooks.ReportHooks;
  * - Change features path to run different feature files
  */
 @CucumberOptions(
+<<<<<<< Updated upstream
     features = "src/test/resources/features/St_NameReg.feature", // Target specific feature - change as needed
+=======
+    features = "src/test/resources/features/St_CGPAReg.feature", // Target specific feature - change as needed
+>>>>>>> Stashed changes
     glue = {"stepDefinitions", "hooks"},
     plugin = {
         "pretty",

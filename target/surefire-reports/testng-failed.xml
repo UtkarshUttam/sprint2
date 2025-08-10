@@ -3,14 +3,19 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="testRunner.pwdRunner">
+      <class name="testRunner.SingleTestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="cleanup"/>
           <include name="runScenario" invocation-numbers="1 17 2 18 19 5 12 13 14"/>
           <include name="tearDownClass"/>
+<<<<<<< Updated upstream
+=======
+          <include name="runScenario" invocation-numbers="0 1 3"/>
+          <include name="cleanup"/>
+>>>>>>> Stashed changes
         </methods>
-      </class> <!-- testRunner.pwdRunner -->
+      </class> <!-- testRunner.SingleTestRunner -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

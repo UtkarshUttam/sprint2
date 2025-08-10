@@ -1,7 +1,10 @@
 base\BaseClass.class
 utils\ExtentTestListener.class
 pageObjects\loginPage.class
+<<<<<<< Updated upstream
 stepDefinitions\EmailRegSteps.class
+=======
+>>>>>>> Stashed changes
 pageObjects\RegistrationPage.class
 stepDefinitions\StNameRegSteps.class
 hooks\ReportHooks.class

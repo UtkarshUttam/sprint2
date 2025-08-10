@@ -2,13 +2,23 @@ C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\StNameRegSteps.ja
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\ExtentManager.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\ValidationHelper.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\pageObjects\viewAllStudentPage.java
+<<<<<<< Updated upstream
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\hooks\Hooks.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\WaitUtility.java
+=======
+C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\StCgpaRegSteps.java
+C:\Cognizant\Sprint2\sprint2Try3\src\test\java\hooks\Hooks.java
+C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\WaitUtility.java
+C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\StEmailRegSteps.java
+>>>>>>> Stashed changes
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\pageObjects\loginPage.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\RegBtnSteps.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\PwdLoginSteps.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\ExtentTestListener.java
+<<<<<<< Updated upstream
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\EmailRegSteps.java
+=======
+>>>>>>> Stashed changes
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\testRunner\pwdRunner.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\DataReader.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\hooks\ReportHooks.java
@@ -18,3 +28,7 @@ C:\Cognizant\Sprint2\sprint2Try3\src\test\java\utils\ScreenshotUtil.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\pageObjects\RegistrationPage.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\ViewAllStudentsSteps.java
 C:\Cognizant\Sprint2\sprint2Try3\src\test\java\testRunner\SingleTestRunner.java
+<<<<<<< Updated upstream
+=======
+C:\Cognizant\Sprint2\sprint2Try3\src\test\java\stepDefinitions\StBacklogRegSteps.java
+>>>>>>> Stashed changes

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results ignored="0" total="20" passed="11" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -15,37 +16,64 @@
             <param index="0">
               <value>
                 <![CDATA[org.testng.TestRunner@11fb1691]]>
+=======
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-10T19:42:32 IST" name="Surefire suite" finished-at="2025-08-10T19:44:45 IST" duration-ms="133791">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-10T19:42:32 IST" name="Surefire test" finished-at="2025-08-10T19:44:45 IST" duration-ms="133791">
+      <class name="testRunner.SingleTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:42:32 IST" name="setUpClass" finished-at="2025-08-10T19:42:33 IST" duration-ms="1394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18b40fe6]]>
+>>>>>>> Stashed changes
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:28:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:06 IST" duration-ms="20153" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:42:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:42:55 IST" duration-ms="21954" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Blank email validation"]]>
+                <![CDATA["CGPA is empty"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Email field edge‐case validation"]]>
+                <![CDATA["CGPA Field Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:29:24 IST" duration-ms="18236" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:42:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:43:14 IST" duration-ms="18651" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Missing '@' symbol validation"]]>
+                <![CDATA["CGPA is less than 0"]]>
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< Updated upstream
                 <![CDATA["Email field edge‐case validation"]]>
               </value>
             </param>
@@ -101,28 +129,36 @@ at ✽.I validate email of type "missingDomain" using data from "src/test/resour
             <param index="1">
               <value>
                 <![CDATA["Email field edge‐case validation"]]>
+=======
+                <![CDATA["CGPA Field Validation"]]>
+>>>>>>> Stashed changes
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:29:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:30:16 IST" duration-ms="17941" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:43:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:43:32 IST" duration-ms="18183" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Complex email acceptance"]]>
+                <![CDATA["CGPA is greater than 10"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Email field edge‐case validation"]]>
+                <![CDATA["CGPA Field Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:30:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:30:34 IST" duration-ms="18222" status="FAIL">
           <params>
             <param index="0">
@@ -248,14 +284,18 @@ at ✽.the name validation result should be "Provide value for student name"(fil
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:32:30 IST" duration-ms="4722" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:43:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:43:50 IST" duration-ms="18535" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Blank password validation"]]>
+                <![CDATA["CGPA has alphabetic characters"]]>
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< Updated upstream
                 <![CDATA["Password field edge‐case validation"]]>
               </value>
             </param>
@@ -341,28 +381,36 @@ at ✽.I validate password of type "long" using data from "src/test/resources/da
             <param index="1">
               <value>
                 <![CDATA["Password field edge‐case validation"]]>
+=======
+                <![CDATA["CGPA Field Validation"]]>
+>>>>>>> Stashed changes
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:32:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:33:08 IST" duration-ms="14290" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:43:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:44:09 IST" duration-ms="18286" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Special characters allowed"]]>
+                <![CDATA["CGPA has special characters"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Password field edge‐case validation"]]>
+                <![CDATA["CGPA Field Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:33:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:33:26 IST" duration-ms="18211" status="FAIL">
           <params>
             <param index="0">
@@ -420,15 +468,18 @@ at ✽.the registration result should be "Registration was successful"(file:///C
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:33:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T16:34:13 IST" duration-ms="28979" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:44:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:44:27 IST" duration-ms="17871" status="PASS">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate all student details against CSV data"]]>
+                <![CDATA["CGPA is valid with one decimal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["View All Students Page"]]>
+                <![CDATA["CGPA Field Validation"]]>
               </value>
             </param>
           </params>
@@ -451,15 +502,39 @@ at ✽.the user validates each student by roll number(file:///C:/Cognizant/Sprin
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="cleanup()[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:34:14 IST" name="cleanup" finished-at="2025-08-10T16:34:14 IST" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.pwdRunner@3901d134]" started-at="2025-08-10T16:34:14 IST" name="tearDownClass" finished-at="2025-08-10T16:34:14 IST" duration-ms="179" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:44:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-10T19:44:45 IST" duration-ms="17993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["CGPA is valid as integer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CGPA Field Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:44:45 IST" name="cleanup" finished-at="2025-08-10T19:44:45 IST" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.SingleTestRunner@11a9e7c8]" started-at="2025-08-10T19:44:45 IST" name="tearDownClass" finished-at="2025-08-10T19:44:45 IST" duration-ms="122" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.pwdRunner -->
+      </class> <!-- testRunner.SingleTestRunner -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

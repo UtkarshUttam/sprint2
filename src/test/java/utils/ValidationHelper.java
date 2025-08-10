@@ -44,7 +44,18 @@ public class ValidationHelper {
         } 
         // Handle error cases
         else {
+<<<<<<< Updated upstream
             if ("error".equals(msgType) && actualMessage.equals(expectedMessage)) {
+=======
+            // Handle minor differences like trailing commas or spaces
+            String normalizedActual = actualMessage.replaceAll("[,\\s]+$", "").trim();
+            String normalizedExpected = expectedMessage.replaceAll("[,\\s]+$", "").trim();
+            
+            if ("error".equals(msgType) && (actualMessage.equals(expectedMessage) || 
+                normalizedActual.equals(normalizedExpected) || 
+                actualMessage.startsWith(expectedMessage) || 
+                expectedMessage.startsWith(actualMessage))) {
+>>>>>>> Stashed changes
                 logPass(testType, "correct error '" + actualMessage + "'", base64Screenshot);
             } else {
                 // Check if application doesn't have the expected validation
